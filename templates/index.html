@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Image Compressor</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- SLAB HEADING -->
+<div class="slab">
+  Image Compressor/Convertor
+</div>
+
+<div class="card">
+<form method="POST" enctype="multipart/form-data">
+
+<!-- DROP AREA -->
+<div class="drop-box" id="dropBox">
+  <input type="file" name="image" id="fileInput" hidden required>
+  <p class="text">Drag image here or choose file</p>
+  <button type="button" class="choose-btn" id="chooseBtn">Choose File</button>
+</div>
+
+<!-- SLIDER -->
+<div class="slider-wrap">
+  <div class="bubble" id="bubble">50%</div>
+  <input type="range" min="0" max="100" value="50" name="percent" id="slider">
+</div>
+
+<!-- SIZE BOX -->
+<div class="size-box">
+  <input type="number" id="sizeInput" step="0.01">
+  <span id="unit">KB</span>
+</div>
+
+<!-- FORMAT -->
+<div class="format-box">
+  <label>Output format</label>
+  <select name="format">
+    <option value="jpg">JPG</option>
+    <option value="jpeg">JPEG</option>
+    <option value="webp">WEBP</option>
+    <option value="png">PNG</option>
+    <option value="ico">ICO</option>
+    <option value="pdf">PDF</option>
+  </select>
+</div>
+
+<!-- FINAL PREVIEW -->
+<div class="final-preview">
+  <p>Final preview</p>
+  <img id="previewImg">
+</div>
+
+<button class="main-btn">Compress & Download</button>
+
+</form>
+</div>
+
+<!-- CREDIT -->
+<footer class="credit">
+  © Created by <span>@destopianpirate</span>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

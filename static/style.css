@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #eef1f6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* SLAB HEADER */
+.slab {
+  margin-top: 20px;
+  background: #4a6cf7;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* CARD */
+.card {
+  margin-top: 25px;
+  width: 440px;
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* DROP BOX */
+.drop-box {
+  border: 2px dashed #4a6cf7;
+  padding: 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.choose-btn {
+  padding: 8px 18px;
+  cursor: pointer;
+}
+
+/* SLIDER */
+.slider-wrap {
+  position: relative;
+  margin: 25px 0 10px;
+}
+
+input[type=range] {
+  width: 100%;
+}
+
+.bubble {
+  position: absolute;
+  top: -30px;
+  background: #4a6cf7;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  transform: translateX(-50%);
+}
+
+/* SIZE BOX */
+.size-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 15px;
+}
+
+.size-box input {
+  width: 110px;
+  padding: 6px;
+  text-align: center;
+}
+
+/* FORMAT */
+.format-box {
+  margin-bottom: 15px;
+}
+
+/* PREVIEW */
+.final-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.final-preview img {
+  max-width: 120px;
+  max-height: 120px;
+  border-radius: 6px;
+  display: none;
+}
+
+/* BUTTON */
+.main-btn {
+  width: 100%;
+  padding: 12px;
+  background: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* FOOTER CREDIT */
+.credit {
+  margin-top: auto;
+  padding: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.credit span {
+  font-weight: bold;
+}
