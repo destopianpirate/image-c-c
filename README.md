@@ -1,2 +1,22 @@
-# image-c-c
-Image Converter / Compressor is a Flask-based web app that lets users compress and convert images with ease. It features drag-and-drop uploads, a 0–100% compression slider with live size estimation in KB/MB, multiple output formats (JPG, PNG, WEBP, ICO, PDF), and a clean, centered UI with preview support.
+# 🖼️ Image Compressor (Python + Flask)
+
+A simple web-based image compressor built using **Flask**, **Pillow**, **HTML**, and **CSS**.
+
+## 🚀 Features
+- Upload image
+- Choose compression quality
+- Convert format (JPG / PNG / WEBP)
+- Download compressed image
+
+## 🛠️ Tech Stack
+- Python
+- Flask
+- Pillow
+- HTML
+- CSS
+
+## ▶️ How to Run Locally
+
+```bash
+pip install -r requirements.txt
+python app.py
